@@ -62,7 +62,7 @@ const quizQuestions = [
         question: "Identify this person on the screen?",
         options: ["Friedrich Heinrich Jacobi", "Jacob Elordi", "Fyodor Dostoevsky", "Leo Tolstoy"],
         answer: "Friedrich Heinrich Jacobi",
-        image: "images/jacobi.jpg"
+        image: "Images/jacobi.jpg"
     },
     {
         question: "Which Greek god once transformed his lover into an animal to hide her from his jealous wife?",
