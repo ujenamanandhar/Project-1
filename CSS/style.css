@@ -1,0 +1,303 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Chalkboard', cursive;
+}
+
+body {
+    background: #ffeef8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background: #ff9ee1;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f3c6f0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #ff66b2;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+header nav a:hover {
+    transform: scale(1.2);
+    color: #ffccf2;
+}
+
+/* Footer */
+footer {
+    background: #ff9ee1;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-top: 5px solid #f3c6f0;
+}
+
+/* ---------------- HOME PAGE ---------------- */
+.hero {
+    background: linear-gradient(120deg, #ffccf2, #ffeef8);
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    box-shadow: 5px 5px 20px rgba(255, 153, 204, 0.3);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ff3399;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #b30059;
+}
+
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff0f7;
+    padding: 30px;
+    border: 4px dashed #ff99cc;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(255, 153, 204, 0.2);
+}
+
+.section h3 {
+    font-size: 2rem;
+    color: #ff3399;
+    margin-bottom: 15px;
+}
+
+.section ul li {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #b30059;
+}
+
+/* Group members cards */
+.members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    background: #ffd6e8;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(255, 153, 204, 0.2);
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #ff3399;
+}
+
+.member-card p {
+    font-size: 1rem;
+    color: #b30059;
+}
+
+/* ---------------- QUIZ GAME ---------------- */
+#quiz-container {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff0f7;
+    border: 4px dashed #ff99cc;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(255, 153, 204, 0.3);
+    text-align: center;
+}
+
+#question {
+    font-size: 2rem;
+    color: #ff3399;
+    margin-bottom: 25px;
+}
+
+#quiz-image {
+    margin: 0 auto 20px auto;
+    border: 3px solid #ff66b2;
+    border-radius: 15px;
+    display: block;
+}
+
+#options button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    background: #ffd6e8;
+    border: 2px solid #ff66b2;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: #b30059;
+}
+
+#options button:hover {
+    background: #ff99cc;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* Pop-up feedback box */
+#feedback {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Correct / Wrong colors */
+.correct {
+    background: #66ff99;
+    color: #006600;
+}
+
+.wrong {
+    background: #ff6699;
+    color: #660033;
+}
+
+/* ---------------- CONTACT PAGE ---------------- */
+#contact-form {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff0f7;
+    border: 4px dashed #ff99cc;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(255, 153, 204, 0.3);
+    text-align: center;
+}
+
+#contact-form h2 {
+    font-size: 2rem;
+    color: #ff3399;
+    margin-bottom: 25px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: 2px solid #ff66b2;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    border-color: #ff99cc;
+    box-shadow: 0 0 10px #ff99cc;
+}
+
+#contact-form button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background: #ffd6e8;
+    border: 2px solid #ff66b2;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #b30059;
+    transition: all 0.3s;
+}
+
+#contact-form button:hover {
+    background: #ff99cc;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Contact pop-up */
+#contact-feedback {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.correct-msg {
+    background: #66ff99;
+    color: #006600;
+}
+
+.wrong-msg {
+    background: #ff6699;
+    color: #660033;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 600px) {
+    #question, #contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    #options button, #contact-form input, #contact-form textarea, #contact-form button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

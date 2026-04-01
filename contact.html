@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us 💌</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="game.html">Quiz Game</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section style="max-width:600px; margin:50px auto; padding:30px; background:#fff0f7; border:4px dashed #ff99cc; border-radius:20px; text-align:center;">
+            <h2>Send Us a Message!</h2>
+            <form id="contact-form" onsubmit="return validateContactForm();">
+                <input type="text" id="name" placeholder="Your Name" style="width:90%; padding:15px; margin:15px 0; border-radius:12px; border:2px solid #ff66b2; font-size:1.1rem;"><br>
+                <input type="email" id="email" placeholder="Your Email" style="width:90%; padding:15px; margin:15px 0; border-radius:12px; border:2px solid #ff66b2; font-size:1.1rem;"><br>
+                <textarea id="message" placeholder="Your Message" rows="5" style="width:90%; padding:15px; margin:15px 0; border-radius:12px; border:2px solid #ff66b2; font-size:1.1rem;"></textarea><br>
+                <button type="submit" style="padding:15px 30px; font-size:1.2rem; border-radius:12px; border:none; background:#ff99cc; color:#fff; font-weight:bold; cursor:pointer; transition:0.3s;">Send Message 💌</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Project Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
