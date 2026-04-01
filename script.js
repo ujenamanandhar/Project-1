@@ -171,3 +171,38 @@ function validateContactForm() {
 
     return false; // prevent default form submission
 }
+
+// --- CAT ANIMATION + TEXT ---
+window.addEventListener("load", () => {
+    const catContainer = document.getElementById("cat-container");
+    const catText = document.getElementById("cat-text");
+
+    // Slide cat into screen
+    setTimeout(() => {
+        catContainer.style.transition = "right 1s ease";
+        catContainer.style.right = "60px";
+    }, 300);
+
+    // Show text after cat arrives
+    setTimeout(() => {
+        catText.style.transition = "opacity 0.5s ease";
+        catText.style.opacity = 1;
+        typeText("Hello! Welcome to our website!");
+    }, 1400);
+
+    // Typing effect
+    function typeText(text) {
+        let i = 0;
+        catText.innerHTML = "";
+
+        function typing() {
+            if (i < text.length) {
+                catText.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing, 40);
+            }
+        }
+
+        typing();
+    }
+});
